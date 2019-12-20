@@ -107,29 +107,18 @@ header {
 .bananaLogoHeader {
     height: 5rem;
     width: 5rem;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 
 .bananaLogoHeader:hover {
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: bananaRandom;
-}
-
-@keyframes bananaLogoHeader {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+    transform: rotate(720deg);
+    filter: drop-shadow(0 0 40px yellow) saturate(3);
 }
 
 .logoTitle span {
     transform: skew(-30deg);
 }
-
 
 footer {
     text-align: center;
@@ -154,20 +143,6 @@ footer {
 
 section, article {
     padding: 1px 0 1rem 0;
-}
-
-.bananaLogo {
-    height: 30%;
-    width: 30%;
-    display: block;
-    margin: auto;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-}
-
-.bananaLogo:hover {
-    transform: rotate(720deg) scale(2);
-    filter: drop-shadow(0 0 40px yellow) saturate(3);
 }
 
 /*----------------------------------------------------*/
@@ -407,10 +382,6 @@ svg {
         filter: drop-shadow(0 0  1px black);
         fill: #fdfd64;
     }
-}
-
-.svg:hover {
-    filter: drop-shadow(0 0  1px black);
 }
 
 @media (min-width: 640px) {
